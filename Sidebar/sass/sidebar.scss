@@ -1,0 +1,83 @@
+:root {
+    --sidebar-color: #b1b7c1;
+}
+
+.text-color {
+    color: var(--sidebar-color);
+}
+
+.sidebar-logo {
+    background: rgba(0, 0, 21, 0.15);
+}
+
+.sidebar-title {
+    font-weight: bold;
+}
+.sidebar {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+}
+
+.sidebar-box {
+    min-height: 100vh;
+    width: 280px;
+    background-color: #3c4b64;
+}
+
+.btn-toggle,
+.btn-toggle-single {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    font-weight: 600;
+    background-color: transparent;
+    border: 0;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus,
+.btn-toggle-single:hover,
+.btn-toggle-single:focus {
+    color: white;
+    background-color: #8c9daf;
+}
+
+.btn-toggle::after {
+    width: 1.25em;
+    line-height: 0;
+    content: url(../images/arrow-up.svg);
+    transition: transform 0.35s ease;
+    transform-origin: 0.5em 50%;
+    margin-left: auto;
+}
+
+.btn-toggle[aria-expanded="true"] {
+    color: white;
+}
+
+.btn-toggle[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+}
+
+.btn-toggle-nav a,
+.btn-toggle-single a {
+    display: flex;
+    gap: 15px;
+    padding: 0.1875rem 0.5rem;
+    margin-top: 0.125rem;
+    margin-left: 1.9rem;
+    text-decoration: none;
+}
+
+/* .btn-toggle-nav a:hover {
+        color: #e1e4e8;
+    } */
+
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+    color: white;
+    background-color: #8c9daf;
+}

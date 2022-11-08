@@ -1,0 +1,4 @@
+.preview .docs-example-modal .modal {
+  position: static;
+  display: block;
+}

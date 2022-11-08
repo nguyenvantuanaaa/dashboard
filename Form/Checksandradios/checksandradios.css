@@ -1,0 +1,129 @@
+.btn {
+  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-padding-y: 0.375rem;
+  --bs-btn-font-family: ;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 400;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-color: rgba(44, 56, 74, 0.95);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-width: 1px;
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: 0.375rem;
+  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 1px 1px rgba(0, 0, 21, 0.075);
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem
+    rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
+  display: inline-block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  font-family: var(--bs-btn-font-family);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-radius: var(--bs-btn-border-radius);
+  background-color: var(--bs-btn-bg);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-primary {
+  --bs-btn-color: #000015;
+  --bs-btn-bg: #39f;
+  --bs-btn-border-color: #39f;
+  --bs-btn-hover-color: #000015;
+  --bs-btn-hover-bg: #52a8ff;
+  --bs-btn-hover-border-color: #47a3ff;
+  --bs-btn-focus-shadow-rgb: 43, 130, 220;
+  --bs-btn-active-color: #000015;
+  --bs-btn-active-bg: #5cadff;
+  --bs-btn-active-border-color: #47a3ff;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, 0.125);
+  --bs-btn-disabled-color: #000015;
+  --bs-btn-disabled-bg: #39f;
+  --bs-btn-disabled-border-color: #39f;
+}
+.btn-secondary {
+  --bs-btn-color: rgba(44, 56, 74, 0.95);
+  --bs-btn-bg: #ebedef;
+  --bs-btn-border-color: #ebedef;
+  --bs-btn-hover-color: rgba(44, 56, 74, 0.95);
+  --bs-btn-hover-bg: #c8c9cb;
+  --bs-btn-hover-border-color: #bcbebf;
+  --bs-btn-focus-shadow-rgb: 209, 212, 216;
+  --bs-btn-active-color: rgba(44, 56, 74, 0.95);
+  --bs-btn-active-bg: #bcbebf;
+  --bs-btn-active-border-color: #b0b2b3;
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba (0, 0, 21, 0.125);
+  --bs-btn-disabled-color: rgba(44, 56, 74, 0.95);
+  --bs-btn-disabled-bg: #ebedef;
+  --bs-btn-disabled-border-color: #ebedef;
+}
+.btn-outline-primary {
+  --bs-btn-color: #39f;
+  --bs-btn-border-color: #39f;
+  --bs-btn-hover-color: #000015;
+  --bs-btn-hover-bg: #5cadff;
+  --bs-btn-hover-border-color: #47a3ff;
+  --bs-btn-focus-shadow-rgb: 51, 153, 255;
+  --bs-btn-active-color: #000015;
+  --bs-btn-active-bg: #5cadff;
+  --bs-btn-active-border-color: #47a3ff;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, 0.125);
+  --bs-btn-disabled-color: #39f;
+  --bs-btn-disabled-bg: transparent;
+  --bs-gradient: none;
+}
+.btn-outline-success {
+  --bs-btn-color: #51cc8a;
+  --bs-btn-border-color: #51cc8a;
+  --bs-btn-hover-color: #000015;
+  --bs-btn-hover-bg: #41a36e;
+  --bs-btn-hover-border-color: #3d9968;
+  --bs-btn-focus-shadow-rgb: 81, 204, 138;
+  --bs-btn-active-color: #000015;
+  --bs-btn-active-bg: #41a36e;
+  --bs-btn-active-border-color: #3d9968;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, 0.125);
+  --bs-btn-disabled-color: #51cc8a;
+  --bs-btn-disabled-bg: transparent;
+  --bs-gradient: none;
+}
+.btn-outline-danger {
+  --bs-btn-color: #ef376e;
+  --bs-btn-border-color: #ef376e;
+  --bs-btn-hover-color: #000015;
+  --bs-btn-hover-bg: #f25f8b;
+  --bs-btn-hover-border-color: #f14b7d;
+  --bs-btn-focus-shadow-rgb: 239, 55, 110;
+  --bs-btn-active-color: #000015;
+  --bs-btn-active-bg: #f25f8b;
+  --bs-btn-active-border-color: #f14b7d;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, 0.125);
+  --bs-btn-disabled-color: #ef376e;
+  --bs-btn-disabled-bg: transparent;
+  --bs-gradient: none;
+}
+
+.form-switch-lg .form-check-input {
+  width: 1.75em;
+  height: 1.25em;
+}
+.form-switch-xl .form-check-input {
+  width: 2em;
+  height: 1.5em;
+}
+
+.btn-check:checked + .btn {
+  color: var(--bs-btn-active-color);
+  background-color: var(--bs-btn-active-bg);
+  border-color: var(--bs-btn-active-border-color);
+}
