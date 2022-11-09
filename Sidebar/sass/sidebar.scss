@@ -4,25 +4,29 @@
 
 .text-color {
     color: var(--sidebar-color);
+    padding: 0.5rem 3rem;
 }
 
 .sidebar-logo {
     background: rgba(0, 0, 21, 0.15);
 }
 
-.sidebar-title {
-    font-weight: bold;
-}
 .sidebar {
     position: sticky;
     top: 0;
     bottom: 0;
 }
-
+.sidebar-title {
+    font-weight: bold;
+}
 .sidebar-box {
     min-height: 100vh;
     width: 280px;
     background-color: #3c4b64;
+}
+
+.btn:focus {
+    box-shadow: none;
 }
 
 .btn-toggle,
@@ -31,7 +35,6 @@
     gap: 15px;
     width: 100%;
     align-items: center;
-    padding: 0.25rem 0.5rem;
     font-weight: 600;
     background-color: transparent;
     border: 0;
@@ -42,7 +45,7 @@
 .btn-toggle-single:hover,
 .btn-toggle-single:focus {
     color: white;
-    background-color: #8c9daf;
+    background-color: #283142;
 }
 
 .btn-toggle::after {
@@ -56,6 +59,7 @@
 
 .btn-toggle[aria-expanded="true"] {
     color: white;
+    background-color: #283142;
 }
 
 .btn-toggle[aria-expanded="true"]::after {
@@ -66,18 +70,11 @@
 .btn-toggle-single a {
     display: flex;
     gap: 15px;
-    padding: 0.1875rem 0.5rem;
-    margin-top: 0.125rem;
-    margin-left: 1.9rem;
     text-decoration: none;
 }
-
-/* .btn-toggle-nav a:hover {
-        color: #e1e4e8;
-    } */
 
 .btn-toggle-nav a:hover,
 .btn-toggle-nav a:focus {
     color: white;
-    background-color: #8c9daf;
+    background-color: #283142;
 }
