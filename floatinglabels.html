@@ -155,124 +155,60 @@
         <div class="main-right">
             <div class="body  p-3 ">
                 <div class="container-lg">
-                    <div class="fs-2 fw-semibold mb-2">Form Control</div>
+                    <div class="fs-2 fw-semibold mb-2">Floating labels</div>
                     <div class="row">
                         <div class="col-12 mb-4">
                             <div class="card">
                                 <div class="card-header">
-                                    <strong>Form control</strong>
+                                    <strong>Floating labels</strong>
                                     <span class="small ms-1">Basic example</span>
                                 </div>
                                 <div class="card-body">
+                                    <p class="text-medium-emphasis small">Wrap a pair of
+                                        <code>&lt;input class="form-control"&gt;</code> and <code>&lt;label&gt;</code>
+                                        elements
+                                        in <code>.form-floating</code> to enable floating labels with Bootstrap’s
+                                        textual form
+                                        fields. A <code>placeholder</code> is required on each
+                                        <code>&lt;input&gt;</code> as our
+                                        method of CSS-only floating labels uses the <code>:placeholder-shown</code>
+                                        pseudo-element. Also note that the <code>&lt;input&gt;</code> must come first so
+                                        we can
+                                        utilize a sibling selector (e.g., <code>~</code>).
+                                    </p>
                                     <div class="tab-content rounded-bottom">
-                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-266">
-                                            <div class="mb-3">
-                                                <label class="form-label" for="exampleFormControlInput1">Email
-                                                    address</label>
-                                                <input class="form-control" id="exampleFormControlInput1" type="email"
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-688">
+                                            <div class="form-floating mb-3">
+                                                <input class="form-control" id="floatingInput" type="email"
                                                     placeholder="name@example.com">
+                                                <label for="floatingInput">Email address</label>
                                             </div>
-                                            <div class="mb-3">
-                                                <label class="form-label" for="exampleFormControlTextarea1">Example
-                                                    textarea</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                    rows="3"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <strong>Form control</strong>
-                                    <span class="small ms-1">Sizing</span>
-                                </div>
-                                <div class="card-body">
-                                    <div class="tab-content rounded-bottom">
-                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1214">
-                                            <input class="form-control form-control-lg mb-2" type="text"
-                                                placeholder=".form-control-lg" aria-label=".form-control-lg example">
-                                            <input class="form-control mb-2" type="text" placeholder="Default input"
-                                                aria-label="default input example">
-                                            <input class="form-control form-control-sm mb-2" type="text"
-                                                placeholder=".form-control-sm" aria-label=".form-control-sm example">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <strong>Form control</strong>
-                                    <span class="small ms-1">Disabled</span>
-                                </div>
-                                <div class="card-body">
-                                    <div class="tab-content rounded-bottom">
-                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1272">
-                                            <input class="form-control  mb-2" type="text" placeholder="Disabled input"
-                                                aria-label="Disabled input example" disabled="">
-                                            <input class="form-control" type="text"
-                                                placeholder="Disabled readonly input"
-                                                aria-label="Disabled input example" disabled="" readonly="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <strong>Form control</strong>
-                                    <span class="small ms-1">Readonly</span>
-                                </div>
-                                <div class="card-body">
-                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1182">
-                                        <input class="form-control" type="text" value="Readonly input here..."
-                                            aria-label="readonly input example" readonly>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <strong>Form control</strong>
-                                    <span class="small ms-1">Readonly plain text</span>
-                                </div>
-                                <div class="card-body">
-                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-369">
-                                        <div class="mb-3 row">
-                                            <label class="col-sm-2 col-form-label" for="staticEmail">Email</label>
-                                            <div class="col-sm-10">
-                                                <input class="form-control-plaintext" id="staticEmail" type="text"
-                                                    readonly="" value="email@example.com">
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 row">
-                                            <label class="col-sm-2 col-form-label" for="inputPassword">Password</label>
-                                            <div class="col-sm-10">
-                                                <input class="form-control" id="inputPassword" type="password">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-617">
-                                        <form class="row g-3">
-                                            <div class="col-auto">
-                                                <label class="visually-hidden" for="staticEmail2">Email</label>
-                                                <input class="form-control-plaintext" id="staticEmail2" type="text"
-                                                    readonly="" value="email@example.com">
-                                            </div>
-                                            <div class="col-auto">
-                                                <label class="visually-hidden" for="inputPassword2">Password</label>
-                                                <input class="form-control" id="inputPassword2" type="password"
+                                            <div class="form-floating">
+                                                <input class="form-control" id="floatingPassword" type="password"
                                                     placeholder="Password">
+                                                <label for="floatingPassword">Password</label>
                                             </div>
-                                            <div class="col-auto"></div>
+                                        </div>
+                                    </div>
+                                    <p class="text-medium-emphasis small">When there’s a <code>value</code> already
+                                        defined,
+                                        <code>&lt;label&gt;</code>s will automatically adjust to their floated position.
+                                    </p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-88">
+                                        <form class="form-floating">
+                                            <input class="form-control" id="floatingInputValue" type="email"
+                                                placeholder="name@example.com" value="test@example.com">
+                                            <label for="floatingInputValue">Input with value</label>
                                         </form>
-                                        <button class="btn btn-primary mb-3" type="submit">Confirm identity</button>
+                                    </div>
+                                    <p class="text-medium-emphasis small">Form validation styles also work as expected.
+                                    </p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-799">
+                                        <form class="form-floating">
+                                            <input class="form-control is-invalid" id="floatingInputInvalid"
+                                                type="email" placeholder="name@example.com" value="test@example.com">
+                                            <label for="floatingInputInvalid">Invalid input</label>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -280,35 +216,32 @@
                         <div class="col-12 mb-4">
                             <div class="card">
                                 <div class="card-header">
-                                    <strong>Form control</strong>
-                                    <span class="small ms-1">File input</span>
+                                    <strong>Floating labels</strong>
+                                    <span class="small ms-1">Textareas</span>
                                 </div>
                                 <div class="card-body">
-                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-491">
-                                        <div class="mb-3">
-                                            <label class="form-label" for="formFile">Default file input
-                                                example</label>
-                                            <input class="form-control" id="formFile" type="file">
+                                    <p class="text-medium-emphasis small">By default, <code>&lt;textarea&gt;</code>s
+                                        with
+                                        <code>.form-control</code> will be the same height as
+                                        <code>&lt;input&gt;</code>s.
+                                    </p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-943">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="floatingTextarea"
+                                                placeholder="Leave a comment here"></textarea>
+                                            <label for="floatingTextarea">Comments</label>
                                         </div>
-                                        <div class="mb-3">
-                                            <label class="form-label" for="formFileMultiple">Multiple files input
-                                                example</label>
-                                            <input class="form-control" id="formFileMultiple" type="file" multiple="">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="form-label" for="formFileDisabled">Disabled file input
-                                                example</label>
-                                            <input class="form-control" id="formFileDisabled" type="file" disabled="">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="form-label" for="formFileSm">Small file input
-                                                example</label>
-                                            <input class="form-control form-control-sm" id="formFileSm" type="file">
-                                        </div>
-                                        <div>
-                                            <label class="form-label" for="formFileLg">Large file input
-                                                example</label>
-                                            <input class="form-control form-control-lg" id="formFileLg" type="file">
+                                    </div>
+                                    <p class="text-medium-emphasis small">To set a custom height on your
+                                        <code>&lt;textarea&gt;</code>, do not use the <code>rows</code> attribute.
+                                        Instead, set
+                                        an explicit <code>height</code> (either inline or via custom CSS).
+                                    </p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1029">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="floatingTextarea2"
+                                                placeholder="Leave a comment here" style="height: 100px"></textarea>
+                                            <label for="floatingTextarea2">Comments</label>
                                         </div>
                                     </div>
                                 </div>
@@ -317,36 +250,67 @@
                         <div class="col-12 mb-4">
                             <div class="card">
                                 <div class="card-header">
-                                    <strong>Form control</strong>
-                                    <span class="small ms-1">Color</span>
+                                    <strong>Floating labels</strong>
+                                    <span class="small ms-1">Selects</span>
                                 </div>
                                 <div class="card-body">
-                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1148">
-                                        <label class="form-label" for="exampleColorInput">Color picker</label>
-                                        <input class="form-control form-control-color" id="exampleColorInput"
-                                            type="color" value="#563d7c" title="Choose your color">
+                                    <p class="text-medium-emphasis small">Other than <code>.form-control</code>,
+                                        floating labels
+                                        are only available on <code>.form-select</code>s. They work in the same way, but
+                                        unlike
+                                        <code>&lt;input&gt;</code>s, they’ll always show the <code>&lt;label&gt;</code>
+                                        in its
+                                        floated state.<strong>Selects with <code>size</code> and <code>multiple</code>
+                                            are not
+                                            supported.</strong>
+                                    </p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-786">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="floatingSelect"
+                                                aria-label="Floating label select example">
+                                                <option selected="">Open this select menu</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <label for="floatingSelect">Works with selects</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 mb-4">
                             <div class="card">
                                 <div class="card-header">
-                                    <strong>Form control</strong>
-                                    <span class="small ms-1">Datalists</span>
+                                    <strong>Floating labels</strong>
+                                    <span class="small ms-1">Layout</span>
                                 </div>
                                 <div class="card-body">
-                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1131">
-                                        <label class="form-label" for="exampleDataList">Datalist example</label>
-                                        <input class="form-control" id="exampleDataList" list="datalistOptions"
-                                            placeholder="Type to search...">
-                                        <datalist id="datalistOptions">
-                                            <option value="San Francisco"></option>
-                                            <option value="New York"></option>
-                                            <option value="Seattle"></option>
-                                            <option value="Los Angeles"></option>
-                                            <option value="Chicago"></option>
-                                        </datalist>
+                                    <p class="text-medium-emphasis small">When working with the CoreUI for Bootstrap
+                                        grid
+                                        system, be sure to place form elements within column classes.</p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1073">
+                                        <div class="row g-2">
+                                            <div class="col-md">
+                                                <div class="form-floating">
+                                                    <input class="form-control" id="floatingInputGrid" type="email"
+                                                        placeholder="name@example.com" value="mdo@example.com">
+                                                    <label for="floatingInputGrid">Email address</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md">
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="floatingSelectGrid"
+                                                        aria-label="Floating label select example">
+                                                        <option selected="">Open this select menu</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    <label for="floatingSelectGrid">Works with selects</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

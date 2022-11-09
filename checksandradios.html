@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formcontrol</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<style>
+    .main-right {
+        flex: 1;
+    }
+</style>
+
+<body>
+    <div class="wrapper d-flex g-5">
+        <link rel="stylesheet" href="Sidebar/sass/sidebar.css">
+        <div class="main-left">
+            <div class="sidebar">
+                <div class="sidebar-box">
+                    <a href="/"
+                        class="sidebar-logo d-flex align-items-center justify-content-center pb-3 p-3 text-color text-decoration-none">
+                        <img src="Sidebar/images/logo.svg" alt="">
+                    </a>
+                    <ul class="list-unstyled m-0">
+                        <li>
+                            <a href="#"
+                                class="btn btn-toggle-single text-color align-items-center rounded collapsed p-3">
+                                <i class="bi bi-ethernet"></i>
+                                Dashboard
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="list-unstyled m-0">
+                        <p class="text-color sidebar-title p-3 m-0">COMPONENTS</p>
+                        <li class="sidebar-list">
+                            <div class="btn-toggle text-color align-items-center rounded collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#base-collapse" aria-expanded="false">
+                                <i class="bi bi-bookmark-star"></i>
+                                Base
+                            </div>
+                            <div class="collapse" id="base-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="text-color rounded">Accordion</a></li>
+                                    <li><a href="#" class="text-color rounded">Breadcrumb</a></li>
+                                    <li><a href="#" class="text-color rounded">Cards</a></li>
+                                    <li><a href="#" class="text-color rounded">Carousel</a></li>
+                                    <li><a href="#" class="text-color rounded">Collapse</a></li>
+                                    <li><a href="#" class="text-color rounded">List group</a></li>
+                                    <li><a href="#" class="text-color rounded">Navs & Tabs</a></li>
+                                    <li><a href="#" class="text-color rounded">Pagination</a></li>
+                                    <li><a href="#" class="text-color rounded">Placeholders</a></li>
+                                    <li><a href="#" class="text-color rounded">Popovers</a></li>
+                                    <li><a href="#" class="text-color rounded">Progress</a></li>
+                                    <li><a href="#" class="text-color rounded">Scrollspy</a></li>
+                                    <li><a href="#" class="text-color rounded">Spinners</a></li>
+                                    <li><a href="#" class="text-color rounded">Tables</a></li>
+                                    <li><a href="#" class="text-color rounded">Tooltips</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-list">
+                            <div class="btn-toggle text-color align-items-center rounded collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#buttons-collapse" aria-expanded="false">
+                                <i class="bi bi-menu-button"></i>
+                                Buttons
+                            </div>
+                            <div class="collapse" id="buttons-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="text-color rounded">Buttons</a></li>
+                                    <li><a href="#" class="text-color rounded">Buttons group</a></li>
+                                    <li><a href="#" class="text-color rounded">Loading Buttons</a></li>
+                                    <li><a href="#" class="text-color rounded">Dropdowns</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-list">
+                            <div class="btn-toggle text-color align-items-center rounded collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#forms-collapse" aria-expanded="false">
+                                <i class="bi bi-card-text"></i>
+                                Forms
+                            </div>
+                            <div class="collapse" id="forms-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="formcontrol.html" class="text-color rounded">Form Control</a></li>
+                                    <li><a href="select.html" class="text-color rounded">Select</a></li>
+                                    <li><a href="checksandradios.html" class="text-color rounded">Checks and radios</a>
+                                    </li>
+                                    <li><a href="range.html" class="text-color rounded">Range</a></li>
+                                    <li><a href="inputgroup.html" class="text-color rounded">Input group</a></li>
+                                    <li><a href="floatinglabels.html" class="text-color rounded">Floating labels</a>
+                                    </li>
+                                    <li><a href="date.html" class="text-color rounded">Date</a></li>
+                                    <li><a href="layout.html" class="text-color rounded">Layout</a></li>
+                                    <li><a href="validation.html" class="text-color rounded">Validation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-list">
+                            <div class="btn btn-toggle text-color align-items-center rounded collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#noti-collapse" aria-expanded="false">
+                                <i class="bi bi-bell"></i>
+                                Notifications
+                            </div>
+                            <div class="collapse" id="noti-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="alerts.html" class="text-color rounded">Alerts</a></li>
+                                    <li><a href="badge.html" class="text-color rounded">Badge</a></li>
+                                    <li><a href="modal.html" class="text-color rounded">Modals</a></li>
+                                    <li><a href="toasts.html" class="text-color rounded">Toasts</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled m-0">
+                        <p class="text-color sidebar-title p-3 m-0">PLUGINS</p>
+                        <li class="">
+                            <a href="#"
+                                class="btn btn-toggle-single text-color align-items-center rounded collapsed p-3">
+                                <i class="bi bi-award"></i>
+                                Charts
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="list-unstyled m-0">
+                        <p class="text-color sidebar-title p-3 m-0">EXTRAS</p>
+                        <li class="">
+                            <div class="btn-toggle text-color align-items-center rounded collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#page-collapse" aria-expanded="false">
+                                <i class="bi bi-star"></i>
+                                Pages
+                            </div>
+                            <div class="collapse" id="page-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="text-color rounded"><i class="bi bi-chevron-bar-right"></i>
+                                            Login</a>
+                                    </li>
+                                    <li><a href="#" class="text-color rounded"><i
+                                                class="bi bi-folder-plus"></i>Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="body  p-3 ">
+                <div class="container-lg">
+                    <div class="fs-2 fw-semibold mb-2">Checks and radios</div>
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Checkbox</strong>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1241">
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="flexCheckDefault" type="checkbox">
+                                                <label class="form-check-label" for="flexCheckDefault">Default
+                                                    checkbox</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="flexCheckChecked" type="checkbox"
+                                                    checked="">
+                                                <label class="form-check-label" for="flexCheckChecked">Checked
+                                                    checkbox</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Indeterminate</strong>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-82">
+                                            <div class="form-check form-example-indeterminate">
+                                                <input class="form-check-input" id="flexCheckIndeterminate"
+                                                    type="checkbox">
+                                                <label class="form-check-label"
+                                                    for="flexCheckIndeterminate">Indeterminate
+                                                    checkbox</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Checkbox</strong>
+                                    <span class="small ms-1">Disabled</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1132">
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="flexCheckDisabled" type="checkbox"
+                                                    disabled="">
+                                                <label class="form-check-label" for="flexCheckDisabled">Disabled
+                                                    checkbox</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="flexCheckCheckedDisabled"
+                                                    type="checkbox" checked="" disabled="">
+                                                <label class="form-check-label" for="flexCheckCheckedDisabled">Disabled
+                                                    checked
+                                                    checkbox</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Switches</strong>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-55">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" id="flexSwitchCheckDefault"
+                                                    type="checkbox">
+                                                <label class="form-check-label" for="flexSwitchCheckDefault">Default
+                                                    switch
+                                                    checkbox input</label>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" id="flexSwitchCheckChecked"
+                                                    type="checkbox" checked="">
+                                                <label class="form-check-label" for="flexSwitchCheckChecked">Checked
+                                                    switch
+                                                    checkbox input</label>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" id="flexSwitchCheckDisabled"
+                                                    type="checkbox" disabled="">
+                                                <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled
+                                                    switch
+                                                    checkbox input</label>
+                                            </div>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" id="flexSwitchCheckCheckedDisabled"
+                                                    type="checkbox" checked="" disabled="">
+                                                <label class="form-check-label"
+                                                    for="flexSwitchCheckCheckedDisabled">Disabled
+                                                    checked switch checkbox input</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Switches</strong>
+                                    <span class="small ms-1">Sizes</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-823">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" id="flexSwitchCheckDefault"
+                                                    type="checkbox">
+                                                <label class="form-check-label" for="flexSwitchCheckDefault">Default
+                                                    switch
+                                                    checkbox input</label>
+                                            </div>
+                                            <div class="form-check form-switch form-switch-lg">
+                                                <input class="form-check-input" id="flexSwitchCheckDefaultLg"
+                                                    type="checkbox">
+                                                <label class="form-check-label" for="flexSwitchCheckDefaultLg">Large
+                                                    switch
+                                                    checkbox input</label>
+                                            </div>
+                                            <div class="form-check form-switch form-switch-xl">
+                                                <input class="form-check-input" id="flexSwitchCheckDefaultXl"
+                                                    type="checkbox">
+                                                <label class="form-check-label" for="flexSwitchCheckDefaultXl">Extra
+                                                    large
+                                                    switch checkbox input</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Switches</strong>
+                                    <span class="small ms-1">Default layout (stacked)</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-medium-emphasis small">By default, any number of checkboxes and
+                                        radios that
+                                        are immediate sibling will be vertically stacked and appropriately spaced with
+                                        <code>.form-check</code>.
+                                    </p>
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1280">
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="defaultCheck1" type="checkbox">
+                                                <label class="form-check-label" for="defaultCheck1">Default
+                                                    checkbox</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="defaultCheck2" type="checkbox"
+                                                    disabled="">
+                                                <label class="form-check-label" for="defaultCheck2">Disabled
+                                                    checkbox</label>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1085">
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="exampleRadios1" type="radio"
+                                                    name="exampleRadios" value="option1" checked="">
+                                                <label class="form-check-label" for="exampleRadios1">Default
+                                                    radio</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="exampleRadios2" type="radio"
+                                                    name="exampleRadios" value="option2">
+                                                <label class="form-check-label" for="exampleRadios2">Second default
+                                                    radio</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" id="exampleRadios3" type="radio"
+                                                    name="exampleRadios" value="option3" disabled="">
+                                                <label class="form-check-label" for="exampleRadios3">Disabled
+                                                    radio</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Checks and Radios</strong>
+                                    <span class="small ms-1">Inline</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-medium-emphasis small">Group checkboxes or radios on the same
+                                        horizontal row
+                                        by adding <code>.form-check-inline</code> to any <code>.form-check</code>.</p>
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-737">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" id="inlineCheckbox1" type="checkbox"
+                                                    value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" id="inlineCheckbox2" type="checkbox"
+                                                    value="option2">
+                                                <label class="form-check-label" for="inlineCheckbox2">2</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" id="inlineCheckbox3" type="checkbox"
+                                                    value="option3" disabled="">
+                                                <label class="form-check-label" for="inlineCheckbox3">3
+                                                    (disabled)</label>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-237">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" id="inlineRadio1" type="radio"
+                                                    name="inlineRadioOptions" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">1</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" id="inlineRadio2" type="radio"
+                                                    name="inlineRadioOptions" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">2</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" id="inlineRadio3" type="radio"
+                                                    name="inlineRadioOptions" value="option3" disabled="">
+                                                <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Checks and Radios</strong>
+                                    <span class="small ms-1">Without labels</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-medium-emphasis small">Omit the wrapping <code>.form-check</code> for
+                                        checkboxes and radios that have no label text. Remember to still provide some
+                                        form of
+                                        accessible name for assistive technologies (for instance, using
+                                        <code>aria-label</code>). See the <a
+                                            href="https://coreui.io/docs/forms/overview/#accessibility">forms overview
+                                            accessibility</a> section for details.
+                                    </p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-268">
+                                        <div>
+                                            <input class="form-check-input" id="checkboxNoLabel" type="checkbox"
+                                                aria-label="...">
+                                        </div>
+                                        <div>
+                                            <input class="form-check-input" id="radioNoLabel1" type="radio"
+                                                name="radioNoLabel" aria-label="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Toggle buttons</strong>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-medium-emphasis small">Create button-like checkboxes and radio
+                                        buttons by
+                                        using <code>.btn</code> styles rather than <code>.form-check-label</code> on the
+                                        <code>&lt;label&gt;</code> elements. These toggle buttons can further be grouped
+                                        in a <a href="https://coreui.io/docs/components/button-group/">button group</a>
+                                        if needed.
+                                    </p>
+                                    <h3 id="checkbox-toggle-buttons">Checkbox toggle buttons<a class="anchorjs-link"
+                                            aria-label="Anchor" data-anchorjs-icon="#" href="#checkbox-toggle-buttons"
+                                            style="padding-left: 0.375em;"></a></h3>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1013">
+                                        <input class="btn-check" id="btn-check" type="checkbox" autocomplete="off">
+                                        <label class="btn btn-primary" for="btn-check">Single toggle</label>
+                                    </div>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-568">
+                                        <input class="btn-check" id="btn-check-2" type="checkbox" checked=""
+                                            autocomplete="off">
+                                        <label class="btn btn-primary" for="btn-check-2">Checked</label>
+                                    </div>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1298">
+                                        <input class="btn-check" id="btn-check-3" type="checkbox" autocomplete="off"
+                                            disabled="">
+                                        <label class="btn btn-primary" for="btn-check-3">Disabled</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Toggle buttons</strong>
+                                    <span class="small ms-1">Radio</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1196">
+                                        <input class="btn-check" id="option1" type="radio" name="options"
+                                            autocomplete="off" checked="">
+                                        <label class="btn btn-secondary" for="option1">Checked</label>
+                                        <input class="btn-check" id="option2" type="radio" name="options"
+                                            autocomplete="off">
+                                        <label class="btn btn-secondary" for="option2">Radio</label>
+                                        <input class="btn-check" id="option3" type="radio" name="options"
+                                            autocomplete="off" disabled="">
+                                        <label class="btn btn-secondary" for="option3">Disabled</label>
+                                        <input class="btn-check" id="option4" type="radio" name="options"
+                                            autocomplete="off">
+                                        <label class="btn btn-secondary" for="option4">Radio</label>
+                                    </div>
+                                    <h3 id="outlined-styles">Outlined styles<a class="anchorjs-link" aria-label="Anchor"
+                                            data-anchorjs-icon="#" href="#outlined-styles"
+                                            style="padding-left: 0.375em;"></a>
+                                    </h3>
+                                    <p class="text-medium-emphasis small">Different variants of <code>.btn</code>, such
+                                        at the
+                                        various outlined styles, are supported.</p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-814">
+                                        <input class="btn-check" id="btn-check-outlined" type="checkbox"
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-primary mb-2" for="btn-check-outlined">Single
+                                            toggle</label><br>
+                                        <input class="btn-check" id="btn-check-2-outlined" type="checkbox" checked=""
+                                            autocomplete="off">
+                                        <label class="btn btn-outline-secondary mb-2"
+                                            for="btn-check-2-outlined">Checked</label><br>
+                                        <input class="btn-check" id="success-outlined" type="radio"
+                                            name="options-outlined" autocomplete="off" checked="">
+                                        <label class="btn btn-outline-success" for="success-outlined">Checked success
+                                            radio</label>
+                                        <input class="btn-check" id="danger-outlined" type="radio"
+                                            name="options-outlined" autocomplete="off">
+                                        <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script>
+        imgTheme('Header/header_sci_1_0_0/', '.header_sci_1_0_0 img')
+
+        function imgTheme(path, tag) {
+            let x = document.querySelectorAll(tag);
+            for (let item of x) {
+                let src = item.getAttribute('src');
+                src = path + src;
+                item.setAttribute('src', src);
+            }
+        }
+
+        function sourceTheme(path, tag) {
+            let x = document.querySelectorAll(tag);
+            for (let item of x) {
+                let srcset = item.getAttribute('srcset');
+                srcset = path + srcset;
+                item.setAttribute('srcset', srcset);
+            }
+        }
+    </script> -->
+</body>
+
+
+</html>

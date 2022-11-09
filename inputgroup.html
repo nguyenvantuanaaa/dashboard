@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formcontrol</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<style>
+    .main-right {
+        flex: 1;
+    }
+</style>
+
+<body>
+    <div class="wrapper d-flex g-5">
+        <link rel="stylesheet" href="Sidebar/sass/sidebar.css">
+        <div class="main-left">
+            <div class="sidebar">
+                <div class="sidebar-box">
+                    <a href="/"
+                        class="sidebar-logo d-flex align-items-center justify-content-center pb-3 p-3 text-color text-decoration-none">
+                        <img src="Sidebar/images/logo.svg" alt="">
+                    </a>
+                    <ul class="list-unstyled m-0">
+                        <li>
+                            <a href="#"
+                                class="btn btn-toggle-single text-color align-items-center rounded collapsed p-3">
+                                <i class="bi bi-ethernet"></i>
+                                Dashboard
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="list-unstyled m-0">
+                        <p class="text-color sidebar-title p-3 m-0">COMPONENTS</p>
+                        <li class="sidebar-list">
+                            <div class="btn-toggle text-color align-items-center rounded collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#base-collapse" aria-expanded="false">
+                                <i class="bi bi-bookmark-star"></i>
+                                Base
+                            </div>
+                            <div class="collapse" id="base-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="text-color rounded">Accordion</a></li>
+                                    <li><a href="#" class="text-color rounded">Breadcrumb</a></li>
+                                    <li><a href="#" class="text-color rounded">Cards</a></li>
+                                    <li><a href="#" class="text-color rounded">Carousel</a></li>
+                                    <li><a href="#" class="text-color rounded">Collapse</a></li>
+                                    <li><a href="#" class="text-color rounded">List group</a></li>
+                                    <li><a href="#" class="text-color rounded">Navs & Tabs</a></li>
+                                    <li><a href="#" class="text-color rounded">Pagination</a></li>
+                                    <li><a href="#" class="text-color rounded">Placeholders</a></li>
+                                    <li><a href="#" class="text-color rounded">Popovers</a></li>
+                                    <li><a href="#" class="text-color rounded">Progress</a></li>
+                                    <li><a href="#" class="text-color rounded">Scrollspy</a></li>
+                                    <li><a href="#" class="text-color rounded">Spinners</a></li>
+                                    <li><a href="#" class="text-color rounded">Tables</a></li>
+                                    <li><a href="#" class="text-color rounded">Tooltips</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-list">
+                            <div class="btn-toggle text-color align-items-center rounded collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#buttons-collapse" aria-expanded="false">
+                                <i class="bi bi-menu-button"></i>
+                                Buttons
+                            </div>
+                            <div class="collapse" id="buttons-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="text-color rounded">Buttons</a></li>
+                                    <li><a href="#" class="text-color rounded">Buttons group</a></li>
+                                    <li><a href="#" class="text-color rounded">Loading Buttons</a></li>
+                                    <li><a href="#" class="text-color rounded">Dropdowns</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-list">
+                            <div class="btn-toggle text-color align-items-center rounded collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#forms-collapse" aria-expanded="false">
+                                <i class="bi bi-card-text"></i>
+                                Forms
+                            </div>
+                            <div class="collapse" id="forms-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="formcontrol.html" class="text-color rounded">Form Control</a></li>
+                                    <li><a href="select.html" class="text-color rounded">Select</a></li>
+                                    <li><a href="checksandradios.html" class="text-color rounded">Checks and radios</a>
+                                    </li>
+                                    <li><a href="range.html" class="text-color rounded">Range</a></li>
+                                    <li><a href="inputgroup.html" class="text-color rounded">Input group</a></li>
+                                    <li><a href="floatinglabels.html" class="text-color rounded">Floating labels</a>
+                                    </li>
+                                    <li><a href="date.html" class="text-color rounded">Date</a></li>
+                                    <li><a href="layout.html" class="text-color rounded">Layout</a></li>
+                                    <li><a href="validation.html" class="text-color rounded">Validation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-list">
+                            <div class="btn btn-toggle text-color align-items-center rounded collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#noti-collapse" aria-expanded="false">
+                                <i class="bi bi-bell"></i>
+                                Notifications
+                            </div>
+                            <div class="collapse" id="noti-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="alerts.html" class="text-color rounded">Alerts</a></li>
+                                    <li><a href="badge.html" class="text-color rounded">Badge</a></li>
+                                    <li><a href="modal.html" class="text-color rounded">Modals</a></li>
+                                    <li><a href="toasts.html" class="text-color rounded">Toasts</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled m-0">
+                        <p class="text-color sidebar-title p-3 m-0">PLUGINS</p>
+                        <li class="">
+                            <a href="#"
+                                class="btn btn-toggle-single text-color align-items-center rounded collapsed p-3">
+                                <i class="bi bi-award"></i>
+                                Charts
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="list-unstyled m-0">
+                        <p class="text-color sidebar-title p-3 m-0">EXTRAS</p>
+                        <li class="">
+                            <div class="btn-toggle text-color align-items-center rounded collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#page-collapse" aria-expanded="false">
+                                <i class="bi bi-star"></i>
+                                Pages
+                            </div>
+                            <div class="collapse" id="page-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="#" class="text-color rounded"><i class="bi bi-chevron-bar-right"></i>
+                                            Login</a>
+                                    </li>
+                                    <li><a href="#" class="text-color rounded"><i
+                                                class="bi bi-folder-plus"></i>Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="body  p-3 ">
+                <div class="container-lg">
+                    <div class="fs-2 fw-semibold mb-2">Input group</div>
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Input group</strong>
+                                    <span class="small ms-1">Basic example</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-medium-emphasis small">Place one add-on or button on either side of
+                                        an input.
+                                        You may also place one on both sides of an input. Remember to place
+                                        <code>&lt;label&gt;</code>s outside the input group.
+                                    </p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1014">
+                                        <div class="input-group mb-3"><span class="input-group-text"
+                                                id="basic-addon1">@</span>
+                                            <input class="form-control" type="text" placeholder="Username"
+                                                aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input class="form-control" type="text" placeholder="Recipient's username"
+                                                aria-label="Recipient's username" aria-describedby="basic-addon2"><span
+                                                class="input-group-text" id="basic-addon2">@example.com</span>
+                                        </div>
+                                        <label class="form-label" for="basic-url">Your vanity URL</label>
+                                        <div class="input-group mb-3"><span class="input-group-text"
+                                                id="basic-addon3">https://example.com/users/</span>
+                                            <input class="form-control" id="basic-url" type="text"
+                                                aria-describedby="basic-addon3">
+                                        </div>
+                                        <div class="input-group mb-3"><span class="input-group-text">$</span>
+                                            <input class="form-control" type="text"
+                                                aria-label="Amount (to the nearest dollar)"><span
+                                                class="input-group-text">.00</span>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input class="form-control" type="text" placeholder="Username"
+                                                aria-label="Username"><span class="input-group-text">@</span>
+                                            <input class="form-control" type="text" placeholder="Server"
+                                                aria-label="Server">
+                                        </div>
+                                        <div class="input-group"><span class="input-group-text">With textarea</span>
+                                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Input group</strong>
+                                    <span class="small ms-1">Wrapping</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-medium-emphasis small">Input groups wrap by default via
+                                        <code>flex-wrap: wrap</code> in order to accommodate custom form field
+                                        validation within
+                                        an input group. You may disable this with <code>.flex-nowrap</code>.
+                                    </p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-677">
+                                        <div class="input-group flex-nowrap"><span class="input-group-text"
+                                                id="addon-wrapping">@</span>
+                                            <input class="form-control" type="text" placeholder="Username"
+                                                aria-label="Username" aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Input group</strong>
+                                    <span class="small ms-1">Sizing</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-medium-emphasis small">Add the relative form sizing classes to the
+                                        <code>.input-group</code> itself and contents within will automatically
+                                        resize—no need
+                                        for repeating the form control size classes on each element.
+                                    </p>
+                                    <p class="text-medium-emphasis small"><strong>Sizing on the individual input group
+                                            elements
+                                            isn’t supported.</strong></p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1021">
+                                        <div class="input-group input-group-sm mb-3"><span class="input-group-text"
+                                                id="inputGroup-sizing-sm">Small</span>
+                                            <input class="form-control" type="text" aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-sm">
+                                        </div>
+                                        <div class="input-group mb-3"><span class="input-group-text"
+                                                id="inputGroup-sizing-default">Default</span>
+                                            <input class="form-control" type="text" aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-default">
+                                        </div>
+                                        <div class="input-group input-group-lg"><span class="input-group-text"
+                                                id="inputGroup-sizing-lg">Large</span>
+                                            <input class="form-control" type="text" aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-lg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Input group</strong>
+                                    <span class="small ms-1">Checkboxes and radios</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-medium-emphasis small">Place any checkbox or radio option within an
+                                        input
+                                        group’s addon instead of text. We recommend adding <code>.mt-0</code> to the
+                                        <code>.form-check-input</code> when there’s no visible text next to the input.
+                                    </p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-239">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text">
+                                                <input class="form-check-input mt-0" type="checkbox"
+                                                    aria-label="Checkbox for following text input">
+                                            </div>
+                                            <input class="form-control" type="text"
+                                                aria-label="Text input with checkbox">
+                                        </div>
+                                        <div class="input-group">
+                                            <div class="input-group-text">
+                                                <input class="form-check-input mt-0" type="radio"
+                                                    aria-label="Radio button for following text input">
+                                            </div>
+                                            <input class="form-control" type="text"
+                                                aria-label="Text input with radio button">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Input group</strong>
+                                    <span class="small ms-1">Multiple inputs</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-medium-emphasis small">While multiple <code>&lt;input&gt;</code>s are
+                                        supported visually, validation styles are only available for input groups with a
+                                        single
+                                        <code>&lt;input&gt;</code>.
+                                    </p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-461">
+                                        <div class="input-group"><span class="input-group-text">First and last
+                                                name</span>
+                                            <input class="form-control" type="text" aria-label="First name">
+                                            <input class="form-control" type="text" aria-label="Last name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Input group</strong>
+                                    <span class="small ms-1">Multiple addons</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-medium-emphasis small">Multiple add-ons are supported and can be
+                                        mixed with
+                                        checkbox and radio input versions.</p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1231">
+                                        <div class="input-group mb-3"><span class="input-group-text">$</span><span
+                                                class="input-group-text">0.00</span>
+                                            <input class="form-control" type="text"
+                                                aria-label="Dollar amount (with dot and two decimal places)">
+                                        </div>
+                                        <div class="input-group">
+                                            <input class="form-control" type="text"
+                                                aria-label="Dollar amount (with dot and two decimal places)"><span
+                                                class="input-group-text">$</span><span
+                                                class="input-group-text">0.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Input group</strong>
+                                    <span class="small ms-1">Button addons</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-358">
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-outline-secondary" id="button-addon1"
+                                                type="button">Button</button>
+                                            <input class="form-control" type="text" placeholder=""
+                                                aria-label="Example text with button addon"
+                                                aria-describedby="button-addon1">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input class="form-control" type="text" placeholder="Recipient's username"
+                                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                                            <button class="btn btn-outline-secondary" id="button-addon2"
+                                                type="button">Button</button>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-outline-secondary" type="button">Button</button>
+                                            <button class="btn btn-outline-secondary" type="button">Button</button>
+                                            <input class="form-control" type="text" placeholder=""
+                                                aria-label="Example text with two button addons">
+                                        </div>
+                                        <div class="input-group">
+                                            <input class="form-control" type="text" placeholder="Recipient's username"
+                                                aria-label="Recipient's username with two button addons">
+                                            <button class="btn btn-outline-secondary" type="button">Button</button>
+                                            <button class="btn btn-outline-secondary" type="button">Button</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Input group</strong>
+                                    <span class="small ms-1">Buttons with dropdowns</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-989">
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                                data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                            <input class="form-control" type="text"
+                                                aria-label="Text input with dropdown button">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input class="form-control" type="text"
+                                                aria-label="Text input with dropdown button">
+                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                                data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="input-group">
+                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                                data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action before</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action before</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                            <input class="form-control" type="text"
+                                                aria-label="Text input with 2 dropdown buttons">
+                                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                                data-coreui-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Input group</strong>
+                                    <span class="small ms-1">Segmented buttons</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1292">
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-outline-secondary" type="button">Action</button>
+                                            <button
+                                                class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                                type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span
+                                                    class="visually-hidden">Toggle Dropdown</span></button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                            <input class="form-control" type="text"
+                                                aria-label="Text input with segmented dropdown button">
+                                        </div>
+                                        <div class="input-group">
+                                            <input class="form-control" type="text"
+                                                aria-label="Text input with segmented dropdown button">
+                                            <button class="btn btn-outline-secondary" type="button">Action</button>
+                                            <button
+                                                class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                                type="button" data-coreui-toggle="dropdown" aria-expanded="false"><span
+                                                    class="visually-hidden">Toggle Dropdown</span></button>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Input group</strong>
+                                    <span class="small ms-1">Custom select</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-975">
+                                        <div class="input-group mb-3">
+                                            <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                                            <select class="form-select" id="inputGroupSelect01">
+                                                <option selected="">Choose...</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <select class="form-select" id="inputGroupSelect02">
+                                                <option selected="">Choose...</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-outline-secondary" type="button">Button</button>
+                                            <select class="form-select" id="inputGroupSelect03"
+                                                aria-label="Example select with button addon">
+                                                <option selected="">Choose...</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group">
+                                            <select class="form-select" id="inputGroupSelect04"
+                                                aria-label="Example select with button addon">
+                                                <option selected="">Choose...</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                            <button class="btn btn-outline-secondary" type="button">Button</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <strong>Input group</strong>
+                                    <span class="small ms-1">Custom file input</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-87">
+                                        <div class="input-group mb-3">
+                                            <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                                            <input class="form-control" id="inputGroupFile01" type="file">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input class="form-control" id="inputGroupFile02" type="file">
+                                            <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-outline-secondary" id="inputGroupFileAddon03"
+                                                type="button">Button</button>
+                                            <input class="form-control" id="inputGroupFile03" type="file"
+                                                aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                                        </div>
+                                        <div class="input-group">
+                                            <input class="form-control" id="inputGroupFile04" type="file"
+                                                aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                            <button class="btn btn-outline-secondary" id="inputGroupFileAddon04"
+                                                type="button">Button</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script>
+        imgTheme('Header/header_sci_1_0_0/', '.header_sci_1_0_0 img')
+
+        function imgTheme(path, tag) {
+            let x = document.querySelectorAll(tag);
+            for (let item of x) {
+                let src = item.getAttribute('src');
+                src = path + src;
+                item.setAttribute('src', src);
+            }
+        }
+
+        function sourceTheme(path, tag) {
+            let x = document.querySelectorAll(tag);
+            for (let item of x) {
+                let srcset = item.getAttribute('srcset');
+                srcset = path + srcset;
+                item.setAttribute('srcset', srcset);
+            }
+        }
+    </script> -->
+</body>
+
+
+</html>

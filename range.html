@@ -155,30 +155,21 @@
         <div class="main-right">
             <div class="body  p-3 ">
                 <div class="container-lg">
-                    <div class="fs-2 fw-semibold mb-2">Form Control</div>
+                    <div class="fs-2 fw-semibold mb-2">Range</div>
                     <div class="row">
                         <div class="col-12 mb-4">
                             <div class="card">
                                 <div class="card-header">
-                                    <strong>Form control</strong>
-                                    <span class="small ms-1">Basic example</span>
+                                    <strong>Range</strong>
                                 </div>
                                 <div class="card-body">
-                                    <div class="tab-content rounded-bottom">
-                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-266">
-                                            <div class="mb-3">
-                                                <label class="form-label" for="exampleFormControlInput1">Email
-                                                    address</label>
-                                                <input class="form-control" id="exampleFormControlInput1" type="email"
-                                                    placeholder="name@example.com">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label class="form-label" for="exampleFormControlTextarea1">Example
-                                                    textarea</label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                    rows="3"></textarea>
-                                            </div>
-                                        </div>
+                                    <p class="text-medium-emphasis small">Create custom
+                                        <code>&lt;input type="range"&gt;</code>
+                                        controls with <code>.form-range</code>.
+                                    </p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-867">
+                                        <label class="form-label" for="customRange1">Example range</label>
+                                        <input class="form-range" id="customRange1" type="range">
                                     </div>
                                 </div>
                             </div>
@@ -186,38 +177,16 @@
                         <div class="col-12 mb-4">
                             <div class="card">
                                 <div class="card-header">
-                                    <strong>Form control</strong>
-                                    <span class="small ms-1">Sizing</span>
-                                </div>
-                                <div class="card-body">
-                                    <div class="tab-content rounded-bottom">
-                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1214">
-                                            <input class="form-control form-control-lg mb-2" type="text"
-                                                placeholder=".form-control-lg" aria-label=".form-control-lg example">
-                                            <input class="form-control mb-2" type="text" placeholder="Default input"
-                                                aria-label="default input example">
-                                            <input class="form-control form-control-sm mb-2" type="text"
-                                                placeholder=".form-control-sm" aria-label=".form-control-sm example">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <strong>Form control</strong>
+                                    <strong>Range</strong>
                                     <span class="small ms-1">Disabled</span>
                                 </div>
                                 <div class="card-body">
-                                    <div class="tab-content rounded-bottom">
-                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1272">
-                                            <input class="form-control  mb-2" type="text" placeholder="Disabled input"
-                                                aria-label="Disabled input example" disabled="">
-                                            <input class="form-control" type="text"
-                                                placeholder="Disabled readonly input"
-                                                aria-label="Disabled input example" disabled="" readonly="">
-                                        </div>
+                                    <p class="text-medium-emphasis small">Add the <code>disabled</code> boolean
+                                        attribute on an
+                                        input to give it a grayed out appearance and remove pointer events.</p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-613">
+                                        <label class="form-label" for="disabledRange">Disabled range</label>
+                                        <input class="form-range" id="disabledRange" type="range" disabled="">
                                     </div>
                                 </div>
                             </div>
@@ -225,106 +194,19 @@
                         <div class="col-12 mb-4">
                             <div class="card">
                                 <div class="card-header">
-                                    <strong>Form control</strong>
-                                    <span class="small ms-1">Readonly</span>
+                                    <strong>Range</strong>
+                                    <span class="small ms-1">Min and max</span>
                                 </div>
                                 <div class="card-body">
-                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1182">
-                                        <input class="form-control" type="text" value="Readonly input here..."
-                                            aria-label="readonly input example" readonly>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <strong>Form control</strong>
-                                    <span class="small ms-1">Readonly plain text</span>
-                                </div>
-                                <div class="card-body">
-                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-369">
-                                        <div class="mb-3 row">
-                                            <label class="col-sm-2 col-form-label" for="staticEmail">Email</label>
-                                            <div class="col-sm-10">
-                                                <input class="form-control-plaintext" id="staticEmail" type="text"
-                                                    readonly="" value="email@example.com">
-                                            </div>
-                                        </div>
-                                        <div class="mb-3 row">
-                                            <label class="col-sm-2 col-form-label" for="inputPassword">Password</label>
-                                            <div class="col-sm-10">
-                                                <input class="form-control" id="inputPassword" type="password">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-617">
-                                        <form class="row g-3">
-                                            <div class="col-auto">
-                                                <label class="visually-hidden" for="staticEmail2">Email</label>
-                                                <input class="form-control-plaintext" id="staticEmail2" type="text"
-                                                    readonly="" value="email@example.com">
-                                            </div>
-                                            <div class="col-auto">
-                                                <label class="visually-hidden" for="inputPassword2">Password</label>
-                                                <input class="form-control" id="inputPassword2" type="password"
-                                                    placeholder="Password">
-                                            </div>
-                                            <div class="col-auto"></div>
-                                        </form>
-                                        <button class="btn btn-primary mb-3" type="submit">Confirm identity</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <strong>Form control</strong>
-                                    <span class="small ms-1">File input</span>
-                                </div>
-                                <div class="card-body">
-                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-491">
-                                        <div class="mb-3">
-                                            <label class="form-label" for="formFile">Default file input
-                                                example</label>
-                                            <input class="form-control" id="formFile" type="file">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="form-label" for="formFileMultiple">Multiple files input
-                                                example</label>
-                                            <input class="form-control" id="formFileMultiple" type="file" multiple="">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="form-label" for="formFileDisabled">Disabled file input
-                                                example</label>
-                                            <input class="form-control" id="formFileDisabled" type="file" disabled="">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="form-label" for="formFileSm">Small file input
-                                                example</label>
-                                            <input class="form-control form-control-sm" id="formFileSm" type="file">
-                                        </div>
-                                        <div>
-                                            <label class="form-label" for="formFileLg">Large file input
-                                                example</label>
-                                            <input class="form-control form-control-lg" id="formFileLg" type="file">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-4">
-                            <div class="card">
-                                <div class="card-header">
-                                    <strong>Form control</strong>
-                                    <span class="small ms-1">Color</span>
-                                </div>
-                                <div class="card-body">
-                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1148">
-                                        <label class="form-label" for="exampleColorInput">Color picker</label>
-                                        <input class="form-control form-control-color" id="exampleColorInput"
-                                            type="color" value="#563d7c" title="Choose your color">
+                                    <p class="text-medium-emphasis small">Range inputs have implicit values for
+                                        <code>min</code>
+                                        and <code>max</code>— <code>0</code> and <code>100</code>, respectively. You may
+                                        specify
+                                        new values for those using the <code>min</code> and <code>max</code> attributes.
+                                    </p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-183">
+                                        <label class="form-label" for="customRange2">Example range</label>
+                                        <input class="form-range" id="customRange2" type="range" min="0" max="5">
                                     </div>
                                 </div>
                             </div>
@@ -332,21 +214,19 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <strong>Form control</strong>
-                                    <span class="small ms-1">Datalists</span>
+                                    <strong>Range</strong>
+                                    <span class="small ms-1">Steps</span>
                                 </div>
                                 <div class="card-body">
-                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1131">
-                                        <label class="form-label" for="exampleDataList">Datalist example</label>
-                                        <input class="form-control" id="exampleDataList" list="datalistOptions"
-                                            placeholder="Type to search...">
-                                        <datalist id="datalistOptions">
-                                            <option value="San Francisco"></option>
-                                            <option value="New York"></option>
-                                            <option value="Seattle"></option>
-                                            <option value="Los Angeles"></option>
-                                            <option value="Chicago"></option>
-                                        </datalist>
+                                    <p class="text-medium-emphasis small">By default, range inputs “snap” to integer
+                                        values. To
+                                        change this, you can specify a <code>step</code> value. In the example below, we
+                                        double
+                                        the number of steps by using <code>step="0.5"</code>.</p>
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-899">
+                                        <label class="form-label" for="customRange3">Example range</label>
+                                        <input class="form-range" id="customRange3" type="range" min="0" max="5"
+                                            step="0.5">
                                     </div>
                                 </div>
                             </div>
