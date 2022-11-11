@@ -1,0 +1,12 @@
+.progress.progress-white .progress-bar {
+  background-color: #fff;
+}
+
+.progress-thin {
+  height: 4px;
+}
+
+.text-medium-emphasis {
+  --bs-text-opacity: 1;
+  color: rgba(44, 56, 74, 0.681) !important;
+}/*# sourceMappingURL=widgets.css.map */
