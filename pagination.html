@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<style>
+    .main-right {
+        flex: 1;
+    }
+
+    .wrapper {
+        background: #f7f9fb;
+    }
+</style>
+
+<body>
+    <div class="wrapper d-flex g-5">
+        <link rel="stylesheet" href="Sidebar/sass/sidebar.css">
+        <div class="main-left">
+            <div class="sidebar">
+                <div class="sidebar-box">
+                    <a href="/"
+                        class="sidebar-logo d-flex align-items-center justify-content-center pb-3 p-3 text-color text-decoration-none">
+                        <img src="Sidebar/images/logo.svg" alt="">
+                    </a>
+                    <ul class="list-unstyled m-0">
+                        <li>
+                            <a href="#" class="btn btn-toggle-single text-color align-items-center  collapsed p-3">
+                                <i class="bi bi-ethernet"></i>
+                                Dashboard
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="list-unstyled m-0">
+                        <p class="text-color sidebar-title p-3 m-0">COMPONENTS</p>
+                        <li class="sidebar-list">
+                            <div class="btn-toggle text-color align-items-center  collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#base-collapse" aria-expanded="false">
+                                <i class="bi bi-bookmark-star"></i>
+                                Base
+                            </div>
+                            <div class="collapse" id="base-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="accordion.html" class="text-color ">Accordion</a></li>
+                                    <li><a href="breadcrumb.html" class="text-color ">Breadcrumb</a></li>
+                                    <li><a href="cards.html" class="text-color ">Cards</a></li>
+                                    <li><a href="carousel.html" class="text-color ">Carousel</a></li>
+                                    <li><a href="collapse.html" class="text-color ">Collapse</a></li>
+                                    <li><a href="listgroup.html" class="text-color ">List group</a></li>
+                                    <li><a href="navs.html" class="text-color ">Navs & Tabs</a></li>
+                                    <li><a href="pagination.html" class="text-color ">Pagination</a></li>
+                                    <li><a href="placeholders.html" class="text-color ">Placeholders</a></li>
+                                    <li><a href="popovers.html" class="text-color ">Popovers</a></li>
+                                    <li><a href="progress.html" class="text-color ">Progress</a></li>
+                                    <li><a href="scrollspy.html" class="text-color ">Scrollspy</a></li>
+                                    <li><a href="spinners.html" class="text-color ">Spinners</a></li>
+                                    <li><a href="tables.html" class="text-color ">Tables</a></li>
+                                    <li><a href="tooltips.html" class="text-color ">Tooltips</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-list">
+                            <div class="btn-toggle text-color align-items-center  collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#buttons-collapse" aria-expanded="false">
+                                <i class="bi bi-menu-button"></i>
+                                Buttons
+                            </div>
+                            <div class="collapse" id="buttons-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="buttons.html" class="text-color ">Buttons</a></li>
+                                    <li><a href="buttonsgroup.html" class="text-color ">Buttons group</a></li>
+                                    <li><a href="loadingbuttons.html" class="text-color ">Loading Buttons</a></li>
+                                    <li><a href="dropdown.html" class="text-color ">Dropdowns</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-list">
+                            <div class="btn-toggle text-color align-items-center  collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#forms-collapse" aria-expanded="false">
+                                <i class="bi bi-card-text"></i>
+                                Forms
+                            </div>
+                            <div class="collapse" id="forms-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="formcontrol.html" class="text-color ">Form Control</a></li>
+                                    <li><a href="select.html" class="text-color ">Select</a></li>
+                                    <li><a href="checksandradios.html" class="text-color ">Checks and radios</a>
+                                    </li>
+                                    <li><a href="range.html" class="text-color ">Range</a></li>
+                                    <li><a href="inputgroup.html" class="text-color ">Input group</a></li>
+                                    <li><a href="floatinglabels.html" class="text-color ">Floating labels</a>
+                                    </li>
+                                    <li><a href="date.html" class="text-color ">Date</a></li>
+                                    <li><a href="layout.html" class="text-color ">Layout</a></li>
+                                    <li><a href="validation.html" class="text-color ">Validation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-list">
+                            <div class="btn btn-toggle text-color align-items-center  collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#noti-collapse" aria-expanded="false">
+                                <i class="bi bi-bell"></i>
+                                Notifications
+                            </div>
+                            <div class="collapse" id="noti-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="alerts.html" class="text-color ">Alerts</a></li>
+                                    <li><a href="badge.html" class="text-color ">Badge</a></li>
+                                    <li><a href="modal.html" class="text-color ">Modals</a></li>
+                                    <li><a href="toasts.html" class="text-color ">Toasts</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="widgets.html"
+                                class="btn btn-toggle-single text-color align-items-center  collapsed p-3">
+                                <i class="bi bi-grid-3x3-gap"></i>
+                                Widgets
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled m-0">
+                        <p class="text-color sidebar-title p-3 m-0">PLUGINS</p>
+                        <li class="">
+                            <a href="chart.html"
+                                class="btn btn-toggle-single text-color align-items-center  collapsed p-3">
+                                <i class="bi bi-award"></i>
+                                Charts
+                            </a>
+                            <a href="datatable.html"
+                                class="btn btn-toggle-single text-color align-items-center  collapsed p-3">
+                                <i class="bi bi-clipboard-data"></i>
+                                DataTables
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="list-unstyled m-0">
+                        <p class="text-color sidebar-title p-3 m-0">EXTRAS</p>
+                        <li class="">
+                            <div class="btn-toggle text-color align-items-center  collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#page-collapse" aria-expanded="false">
+                                <i class="bi bi-star"></i>
+                                Pages
+                            </div>
+                            <div class="collapse" id="page-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="login.html" class="text-color "><i class="bi bi-chevron-bar-right"></i>
+                                            Login</a></li>
+                                    <li><a href="register.html" class="text-color "><i
+                                                class="bi bi-folder-plus"></i>Register</a>
+                                    </li>
+                                    <li><a href="error404.html" class="text-color "><i class="bi bi-bug"></i>Error
+                                            404</a>
+                                    </li>
+                                    <li><a href="error500.html" class="text-color "><i class="bi bi-bug"></i>Error
+                                            500</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="body p-3 ">
+                <div class="container-lg">
+                    <div class="fs-2 fw-semibold mb-2">Pagination</div>
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header"><strong>Pagination</strong><span
+                                        class="small ms-1">Overview</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1234">
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination">
+                                                    <li class="page-item"><a class="page-link" href="#">Previous</a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header"><strong>Pagination</strong><span class="small ms-1">Working
+                                        with
+                                        icons</span></div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-799">
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination">
+                                                    <li class="page-item"><a class="page-link" href="#"
+                                                            aria-label="Previous"><span aria-hidden="true">«</span></a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#"
+                                                            aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header"><strong>Pagination</strong><span class="small ms-1">Disabled
+                                        and active
+                                        states</span></div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-53">
+                                            <nav aria-label="...">
+                                                <ul class="pagination">
+                                                    <li class="page-item disabled"><a class="page-link" href="#"
+                                                            tabindex="-1" aria-disabled="true">Previous</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item active" aria-current="page"><a
+                                                            class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header"><strong>Pagination</strong><span
+                                        class="small ms-1">Sizing</span></div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-602">
+                                            <nav aria-label="...">
+                                                <ul class="pagination pagination-lg">
+                                                    <li class="page-item active" aria-current="page"><span
+                                                            class="page-link">1</span></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header"><strong>Pagination</strong><span
+                                        class="small ms-1">Alignment</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-668">
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item disabled"><a class="page-link" href="#"
+                                                            tabindex="-1" aria-disabled="true">Previous</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+</html>

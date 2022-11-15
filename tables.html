@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breadcrumb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<style>
+    .main-right {
+        flex: 1;
+    }
+
+    .wrapper {
+        background: #f7f9fb;
+    }
+</style>
+
+<body>
+    <div class="wrapper d-flex g-5">
+        <link rel="stylesheet" href="Sidebar/sass/sidebar.css">
+        <div class="main-left">
+            <div class="sidebar">
+                <div class="sidebar-box">
+                    <a href="/"
+                        class="sidebar-logo d-flex align-items-center justify-content-center pb-3 p-3 text-color text-decoration-none">
+                        <img src="Sidebar/images/logo.svg" alt="">
+                    </a>
+                    <ul class="list-unstyled m-0">
+                        <li>
+                            <a href="#" class="btn btn-toggle-single text-color align-items-center  collapsed p-3">
+                                <i class="bi bi-ethernet"></i>
+                                Dashboard
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="list-unstyled m-0">
+                        <p class="text-color sidebar-title p-3 m-0">COMPONENTS</p>
+                        <li class="sidebar-list">
+                            <div class="btn-toggle text-color align-items-center  collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#base-collapse" aria-expanded="false">
+                                <i class="bi bi-bookmark-star"></i>
+                                Base
+                            </div>
+                            <div class="collapse" id="base-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="accordion.html" class="text-color ">Accordion</a></li>
+                                    <li><a href="breadcrumb.html" class="text-color ">Breadcrumb</a></li>
+                                    <li><a href="cards.html" class="text-color ">Cards</a></li>
+                                    <li><a href="carousel.html" class="text-color ">Carousel</a></li>
+                                    <li><a href="collapse.html" class="text-color ">Collapse</a></li>
+                                    <li><a href="listgroup.html" class="text-color ">List group</a></li>
+                                    <li><a href="navs.html" class="text-color ">Navs & Tabs</a></li>
+                                    <li><a href="pagination.html" class="text-color ">Pagination</a></li>
+                                    <li><a href="placeholders.html" class="text-color ">Placeholders</a></li>
+                                    <li><a href="popovers.html" class="text-color ">Popovers</a></li>
+                                    <li><a href="progress.html" class="text-color ">Progress</a></li>
+                                    <li><a href="scrollspy.html" class="text-color ">Scrollspy</a></li>
+                                    <li><a href="spinners.html" class="text-color ">Spinners</a></li>
+                                    <li><a href="tables.html" class="text-color ">Tables</a></li>
+                                    <li><a href="tooltips.html" class="text-color ">Tooltips</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-list">
+                            <div class="btn-toggle text-color align-items-center  collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#buttons-collapse" aria-expanded="false">
+                                <i class="bi bi-menu-button"></i>
+                                Buttons
+                            </div>
+                            <div class="collapse" id="buttons-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="buttons.html" class="text-color ">Buttons</a></li>
+                                    <li><a href="buttonsgroup.html" class="text-color ">Buttons group</a></li>
+                                    <li><a href="loadingbuttons.html" class="text-color ">Loading Buttons</a></li>
+                                    <li><a href="dropdown.html" class="text-color ">Dropdowns</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-list">
+                            <div class="btn-toggle text-color align-items-center  collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#forms-collapse" aria-expanded="false">
+                                <i class="bi bi-card-text"></i>
+                                Forms
+                            </div>
+                            <div class="collapse" id="forms-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="formcontrol.html" class="text-color ">Form Control</a></li>
+                                    <li><a href="select.html" class="text-color ">Select</a></li>
+                                    <li><a href="checksandradios.html" class="text-color ">Checks and radios</a>
+                                    </li>
+                                    <li><a href="range.html" class="text-color ">Range</a></li>
+                                    <li><a href="inputgroup.html" class="text-color ">Input group</a></li>
+                                    <li><a href="floatinglabels.html" class="text-color ">Floating labels</a>
+                                    </li>
+                                    <li><a href="date.html" class="text-color ">Date</a></li>
+                                    <li><a href="layout.html" class="text-color ">Layout</a></li>
+                                    <li><a href="validation.html" class="text-color ">Validation</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-list">
+                            <div class="btn btn-toggle text-color align-items-center  collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#noti-collapse" aria-expanded="false">
+                                <i class="bi bi-bell"></i>
+                                Notifications
+                            </div>
+                            <div class="collapse" id="noti-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="alerts.html" class="text-color ">Alerts</a></li>
+                                    <li><a href="badge.html" class="text-color ">Badge</a></li>
+                                    <li><a href="modal.html" class="text-color ">Modals</a></li>
+                                    <li><a href="toasts.html" class="text-color ">Toasts</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="widgets.html"
+                                class="btn btn-toggle-single text-color align-items-center  collapsed p-3">
+                                <i class="bi bi-grid-3x3-gap"></i>
+                                Widgets
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled m-0">
+                        <p class="text-color sidebar-title p-3 m-0">PLUGINS</p>
+                        <li class="">
+                            <a href="chart.html"
+                                class="btn btn-toggle-single text-color align-items-center  collapsed p-3">
+                                <i class="bi bi-award"></i>
+                                Charts
+                            </a>
+                            <a href="datatable.html"
+                                class="btn btn-toggle-single text-color align-items-center  collapsed p-3">
+                                <i class="bi bi-clipboard-data"></i>
+                                DataTables
+                            </a>
+                        </li>
+
+                    </ul>
+                    <ul class="list-unstyled m-0">
+                        <p class="text-color sidebar-title p-3 m-0">EXTRAS</p>
+                        <li class="">
+                            <div class="btn-toggle text-color align-items-center  collapsed p-3"
+                                data-bs-toggle="collapse" data-bs-target="#page-collapse" aria-expanded="false">
+                                <i class="bi bi-star"></i>
+                                Pages
+                            </div>
+                            <div class="collapse" id="page-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a href="login.html" class="text-color "><i class="bi bi-chevron-bar-right"></i>
+                                            Login</a></li>
+                                    <li><a href="register.html" class="text-color "><i
+                                                class="bi bi-folder-plus"></i>Register</a>
+                                    </li>
+                                    <li><a href="error404.html" class="text-color "><i class="bi bi-bug"></i>Error
+                                            404</a>
+                                    </li>
+                                    <li><a href="error500.html" class="text-color "><i class="bi bi-bug"></i>Error
+                                            500</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="body p-3 ">
+                <div class="container-lg">
+                    <div class="fs-2 fw-semibold mb-2">Tables</div>
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header"><strong>Tables</strong><span class="small ms-1">Basic
+                                        example</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1055">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header"><strong>Tables</strong><span class="small ms-1">Variants</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-759">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Class</th>
+                                                        <th scope="col">Heading</th>
+                                                        <th scope="col">Heading</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Default</th>
+                                                        <td>Cell</td>
+                                                        <td>Cell</td>
+                                                    </tr>
+                                                    <tr class="table-primary">
+                                                        <th scope="row">Primary</th>
+                                                        <td>Cell</td>
+                                                        <td>Cell</td>
+                                                    </tr>
+                                                    <tr class="table-secondary">
+                                                        <th scope="row">Secondary</th>
+                                                        <td>Cell</td>
+                                                        <td>Cell</td>
+                                                    </tr>
+                                                    <tr class="table-success">
+                                                        <th scope="row">Success</th>
+                                                        <td>Cell</td>
+                                                        <td>Cell</td>
+                                                    </tr>
+                                                    <tr class="table-danger">
+                                                        <th scope="row">Danger</th>
+                                                        <td>Cell</td>
+                                                        <td>Cell</td>
+                                                    </tr>
+                                                    <tr class="table-warning">
+                                                        <th scope="row">Warning</th>
+                                                        <td>Cell</td>
+                                                        <td>Cell</td>
+                                                    </tr>
+                                                    <tr class="table-info">
+                                                        <th scope="row">Info</th>
+                                                        <td>Cell</td>
+                                                        <td>Cell</td>
+                                                    </tr>
+                                                    <tr class="table-light">
+                                                        <th scope="row">Light</th>
+                                                        <td>Cell</td>
+                                                        <td>Cell</td>
+                                                    </tr>
+                                                    <tr class="table-dark">
+                                                        <th scope="row">Dark</th>
+                                                        <td>Cell</td>
+                                                        <td>Cell</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header"><strong>Tables</strong><span class="small ms-1">Striped
+                                        rows</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-806">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1184">
+                                            <table class="table table-dark table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-63">
+                                            <table class="table table-success table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header"><strong>Tables</strong><span class="small ms-1">Hoverable
+                                        rows</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-100">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-924">
+                                            <table class="table table-dark table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1156">
+                                            <table class="table table-striped table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header"><strong>Tables</strong><span class="small ms-1">Active
+                                        tables</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1112">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="table-active">
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td class="table-active" colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-974">
+                                            <table class="table table-dark">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="table-active">
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td class="table-active" colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header"><strong>Tables</strong><span class="small ms-1">Bordered
+                                        tables</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-370">
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1185">
+                                            <table class="table table-bordered border-primary">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header"><strong>Tables</strong><span class="small ms-1">Tables without
+                                        borders</span></div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-1209">
+                                            <table class="table table-borderless">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-599">
+                                            <table class="table table-dark table-borderless">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">First</th>
+                                                        <th scope="col">Last</th>
+                                                        <th scope="col">Handle</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                        <td>@mdo</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                        <td>@fat</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td colspan="2">Larry the Bird</td>
+                                                        <td>@twitter </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4">
+                            <div class="card">
+                                <div class="card-header"><strong>Tables</strong><span class="small ms-1">Vertical
+                                        alignment</span></div>
+                                <div class="card-body">
+                                    <div class="tab-content rounded-bottom">
+                                        <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-776">
+                                            <div class="table-responsive">
+                                                <table class="table align-middle">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="w-25" scope="col">Heading 1</th>
+                                                            <th class="w-25" scope="col">Heading 2</th>
+                                                            <th class="w-25" scope="col">Heading 3</th>
+                                                            <th class="w-25" scope="col">Heading 4</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>This cell inherits<code>vertical-align: middle;</code>
+                                                                from the
+                                                                table</td>
+                                                            <td>This cell inherits<code>vertical-align: middle;</code>
+                                                                from the
+                                                                table</td>
+                                                            <td>This cell inherits<code>vertical-align: middle;</code>
+                                                                from the
+                                                                table</td>
+                                                            <td>This here is some placeholder text, intended to take up
+                                                                quite a
+                                                                bit of vertical space, to demonstrate how the vertical
+                                                                alignment
+                                                                works in the preceding cells.</td>
+                                                        </tr>
+                                                        <tr class="align-bottom">
+                                                            <td>This cell inherits<code>vertical-align: bottom;</code>
+                                                                from the
+                                                                table row</td>
+                                                            <td>This cell inherits<code>vertical-align: bottom;</code>
+                                                                from the
+                                                                table row</td>
+                                                            <td>This cell inherits<code>vertical-align: bottom;</code>
+                                                                from the
+                                                                table row</td>
+                                                            <td>This here is some placeholder text, intended to take up
+                                                                quite a
+                                                                bit of vertical space, to demonstrate how the vertical
+                                                                alignment
+                                                                works in the preceding cells.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>This cell inherits<code>vertical-align: middle;</code>
+                                                                from the
+                                                                table</td>
+                                                            <td>This cell inherits<code>vertical-align: middle;</code>
+                                                                from the
+                                                                table</td>
+                                                            <td class="align-top">This cell is aligned to the top.</td>
+                                                            <td>This here is some placeholder text, intended to take up
+                                                                quite a
+                                                                bit of vertical space, to demonstrate how the vertical
+                                                                alignment
+                                                                works in the preceding cells.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+
+</html>
